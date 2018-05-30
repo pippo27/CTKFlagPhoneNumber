@@ -130,7 +130,7 @@ class CTKSearchCountryViewController: UITableViewController, UISearchResultsUpda
 		
 		//dismissController()
         
-        self.searchController?.dismiss(animate: false, completion: {
+        self.searchController?.dismiss(animated: false, completion: {
             self.searchController?.isActive = false
             self.searchController?.searchBar.resignFirstResponder()
             self.dismiss(animated: false, completion: nil)
