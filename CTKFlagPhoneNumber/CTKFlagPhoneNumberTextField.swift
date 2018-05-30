@@ -90,7 +90,13 @@ open class CTKFlagPhoneNumberTextField: UITextField, UITextFieldDelegate, Countr
 	override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
 		return false
 	}
-	
+    
+    // แก้ :- ถ้า textfield อยู่ใน scrollView keyboard ไม่เป็น numPad
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.displayNumberKeyBoard()
+        return true
+    }
+    
 	private func setup() {
 		borderStyle = .roundedRect
 		leftViewMode = UITextFieldViewMode.always

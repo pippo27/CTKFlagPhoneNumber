@@ -125,10 +125,16 @@ class CTKSearchCountryViewController: UITableViewController, UISearchResultsUpda
 		
 		delegate?.didSelect(country: getItem(at: indexPath))
 		
-		searchController?.isActive = false
-		searchController?.searchBar.resignFirstResponder()
+		//searchController?.isActive = false
+		//searchController?.searchBar.resignFirstResponder()
 		
-		dismissController()
+		//dismissController()
+        
+        self.searchController?.dismiss(animate: false, completion: {
+            self.searchController?.isActive = false
+            self.searchController?.searchBar.resignFirstResponder()
+            self.dismiss(animated: false, completion: nil)
+        })
 	}
 
 	// UISearchResultsUpdating
