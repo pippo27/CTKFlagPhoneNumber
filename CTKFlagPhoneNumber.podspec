@@ -40,7 +40,7 @@ s.resource_bundles = {'CTKFlagPhoneNumber' => ['CTKFlagPhoneNumber/Resources/**/
 # s.public_header_files = 'Pod/Classes/**/*.h'
 # s.frameworks = 'UIKit', 'MapKit'
 
-s.dependency 'libPhoneNumber-iOS'
+s.dependency 'libPhoneNumber-iOS', '1.2.0'
 #s.xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 end

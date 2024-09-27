@@ -40,7 +40,7 @@ open class CTKFlagPhoneNumberTextField: UITextField, UITextFieldDelegate, Countr
 	
 	public var flagButton: UIButton!
 	private lazy var countryPicker: CountryPicker = CountryPicker()
-	private lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil()
+    private lazy var phoneUtil: NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
 	private var formatter: NBAsYouTypeFormatter?
 	
 	private var phoneCode: String?

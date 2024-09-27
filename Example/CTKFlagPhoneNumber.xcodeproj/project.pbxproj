@@ -123,7 +123,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				D40414452EDCB5B06F74AF2F /* [CP] Embed Pods Frameworks */,
-				FC6B59364280C4599ED4E98F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +155,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -207,7 +207,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CTKFlagPhoneNumber_Example/Pods-CTKFlagPhoneNumber_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CTKFlagPhoneNumber_Example/Pods-CTKFlagPhoneNumber_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CTKFlagPhoneNumber/CTKFlagPhoneNumber.framework",
 				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
 			);
@@ -218,22 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTKFlagPhoneNumber_Example/Pods-CTKFlagPhoneNumber_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC6B59364280C4599ED4E98F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTKFlagPhoneNumber_Example/Pods-CTKFlagPhoneNumber_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CTKFlagPhoneNumber_Example/Pods-CTKFlagPhoneNumber_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -384,7 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38CD3GCJU3;
 				INFOPLIST_FILE = CTKFlagPhoneNumber/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -401,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38CD3GCJU3;
 				INFOPLIST_FILE = CTKFlagPhoneNumber/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
