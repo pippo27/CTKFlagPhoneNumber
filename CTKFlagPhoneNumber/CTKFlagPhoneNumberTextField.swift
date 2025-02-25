@@ -121,7 +121,9 @@ open class CTKFlagPhoneNumberTextField: UITextField, UITextFieldDelegate, Countr
 		
 		leftView?.addSubview(flagButton)
 		
-		countryPicker.setCountry(Locale.current.regionCode!)
+        if let regionCode = Locale.current.regionCode {
+            countryPicker.setCountry(regionCode)
+        }
 	}
 	
 	open override func layoutSubviews() {
